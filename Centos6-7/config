@@ -1,0 +1,83 @@
+Host 10.65.*
+  ProxyCommand ssh -W %h:%p root@jumpbox.inf.envx.gb.msm.internal -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.118.* *.backoffice1.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.backoffice1.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.121.* *.ci1-cms.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.ci1-cms.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.115.* *.ci1-services.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.ci1-services.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.96.* *.inf1.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.inf1.gb.moneysupermarket.com -i ~/.ssh/inf/id_rsa
+  User root	
+  IdentityFile ~/.ssh/inf/msmkey03.pem
+  ForwardX11 no
+ 
+Host 10.113.* *.perf1.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.perf1.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.111.* *.perf2.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.perf2.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.78.* *.perf3.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.perf3.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.79.* *.perf4.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.perf4.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.105.* *.pre1.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.pre1.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.116.* *.sit1.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.sit1.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.68.2.* *.test1-backoffice.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.test1-backoffice.gb.moneysupermarket.com -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.122.* *.test1-cms.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.test1-cms.gb.moneysupermarket.com  -i ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
+ 
+Host 10.114.* *.test1-services.gb.msm.internal
+  ProxyCommand ssh -W %h:%p sysadmin@j1.test1-services.gb.moneysupermarket.com ~/.ssh/test/id_rsa
+  User sysadmin
+  IdentityFile ~/.ssh/test/id_rsa
+  ForwardX11 no
